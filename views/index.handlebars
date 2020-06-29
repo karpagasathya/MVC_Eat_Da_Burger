@@ -5,37 +5,24 @@
 </div>
 <br><br>
 
-
-{{!-- <div class="text-center">
-  <h1 class="mt-5">Eat Da Burger!</h1>
- <br>
-</div>
-<br><br> --}}
-
-{{!-- <div class="container" >
-    <div class="row justify-content-center align-items-center">
-      <h2>Add a Burger</h2>
-    </div>
-</div>
-<br> --}}
 <div class="container">
   <div class="row justify-content-center align-items-center">
-    <form class="col-4 mb-5 "  id="add-burger">
+    <form class="col-6 form-inline mb-5"  id="add-burger">
       <div class="form-group text-center">
-      {{!-- <label for="burger">Name of Burger:</label> --}}
-      <input type="text" class="form-control" id="burger-name" placeholder="Add your own tasty burger here!!"></input>
-     
-      <button type="submit" class="btn mt-4">Add Burger</button>
+      <input type="text" class="form-control" id="burger-name" size="50" name="burger_name" placeholder="Add your burger here!"></input>
+      <button type="submit" class="btn ml-5">Add Burger</button>
       </div>
      </form>
+     
   </div>
 </div>
 
 
+
 <div class="row">
 	<div class="col-md-1"></div>
-	<div class="col-md-4 not_ate">
-		<h2 class="text-center">Available Burgers</h2>
+	<div class="col-md-4 available">
+		<h2 class="py-2 text-center">Available Burgers</h2>
 		<ol class="list-group">
         {{#each burgers}}
         {{#unless devoured}}
@@ -45,8 +32,8 @@
       </ol>
 	</div>
 	<div class="col-md-2"></div>
-	<div class="col-md-4 ate">
-		<h2 class="text-center">Devoured Burgers.</h2>
+	<div class="col-md-4 devoured">
+		<h2 class="py-2 text-center">Devoured Burgers</h2>
 		<ol class="list-group">
         {{#each burgers}}
         {{#if devoured}}

@@ -1,0 +1,54 @@
+<div class="text-center">
+  <h1 class="mt-5">Eat Da Burger!</h1>
+ <br>
+  <img class="img" src="" alt="burger-pic">
+</div>
+<br><br>
+
+<div class="container" >
+    <div class="row justify-content-center align-items-center">
+      <h2>Add a Burger</h2>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <form class="col-4 mb-5 "  id="add-burger">
+      <div class="form-group text-center">
+      {{!-- <label for="burger">Name of Burger:</label> --}}
+      <input type="text" class="form-control" id="burger-name" placeholder="Add your own tasty burger!!"></input>
+     
+      <button type="submit" class="btn mt-4">Add Burger</button>
+      </div>
+     </form>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Available Burgers</h2>
+      <ol class="list-group">
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devour=false}}
+        {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
+    <div class="col">
+      <h2>Devoured Burgers</h2>
+
+      <ol class="list-group">
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-devoured devour=true}}
+        {{/if}}
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+</div>
+  
+  

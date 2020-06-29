@@ -1,7 +1,7 @@
 // Import the ORM to create functions that will interact with the database.
-var orm = require("../config/orm.js");
+let orm = require("../config/orm.js");
 //Show everything in the table
-var burger = {
+let burger = {
   selectAll: function (cb) {
     orm.selectAll("burgers", function (res) {
       cb(res);

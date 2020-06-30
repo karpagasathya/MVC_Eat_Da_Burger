@@ -1,0 +1,67 @@
+.list-group-item {
+  display: list-item;
+}
+
+.list-group {
+    list-style-position: inside;
+}
+
+h1{
+   background: rgba(95, 38, 30, 0.6);
+   color: white;
+   border-radius: 10px;
+}
+
+body {
+    background-image: url("/assets/img/burger3.jpg");
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+ } 
+
+
+.btn{
+    background: rgba(95, 38, 30, 0.6);
+    color: white;
+}
+
+.btn:hover,#trash:hover,#devour:hover button{
+    color: red;
+    transform: scale(1.5);
+}
+
+.available, .devoured {
+    
+    background: rgba(95, 38, 30, 0.6);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#trash {
+    cursor: pointer;
+
+}
+
+#trash:hover,#devour:hover{
+    transform: scale(1.5);
+}
+
+#devour:hover{
+    color:green;
+}
+
+#devour{
+    cursor:grab;
+}
+
+
+
+li{
+    color:black;
+}
+
+
+

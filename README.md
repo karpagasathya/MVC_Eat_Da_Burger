@@ -1,4 +1,6 @@
-# Eat Da Burger 
+# Eat Da Burger
+![](https://img.shields.io/badge/License-MIT-important)
+![badge](https://img.shields.io/github/languages/top/karpagasathya/MVC_Eat_Da_Burger) 
 
 This Application is a burger logger made with MySQL, Node, Express, Handlebars and a homemade ORM. Made following a MVC design pattern; using Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
 

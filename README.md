@@ -7,7 +7,7 @@ This Application is a burger logger made with MySQL, Node, Express, Handlebars a
 * Model-View-Controller (MVC)
 * Object Relational Mapping (ORM)
 * Express.js
-* HTTP Requests (GET, POST,UPDATE,DELETE)
+* HTTP Requests (GET, POST,PUT,DELETE)
 * Routes and static content
 * Handlebars engine integration
 * Node.js

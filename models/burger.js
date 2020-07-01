@@ -20,7 +20,7 @@ let burger = {
       cb(res);
     });
   },
-
+  // Delete an item from the table
   delete: function (condition, cb) {
     orm.delete("burgers", condition, function (res) {
       cb(res);

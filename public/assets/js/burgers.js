@@ -1,8 +1,8 @@
 $(function () {
     $(".devour").on("click", function (event) {
-        var id = $(this).data("id");
-        var newDevoured = $(this).data("newdevoured");
-        var newState = {
+        let id = $(this).data("id");
+        let newDevoured = $(this).data("newdevoured");
+        let newState = {
             devoured: "true"
         };
        
@@ -26,7 +26,7 @@ $(function () {
         return false;
       } else {
         
-        var newBurger = {
+        let newBurger = {
           burger_name: $("#burger-name").val().trim(),
           devoured: 0,
         };
@@ -46,7 +46,7 @@ $(function () {
   $(".delete").on("click", function (event) {
     event.preventDefault();
 
-    var id = $(this).data("id");
+    let id = $(this).data("id");
 
     $.ajax({
       type: "DELETE",

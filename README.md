@@ -58,3 +58,9 @@ Contributions are welcome. You can create an issue or submit a pull request.
 ## License
 
 This Application uses the MIT License.
+
+## Screenshots
+
+![](public/assets/img/screenshot.png)
+
+![](public/assets/img/screenshot2.png)
